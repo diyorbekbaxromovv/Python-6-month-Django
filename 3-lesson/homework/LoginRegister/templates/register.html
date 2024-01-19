@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'register.css' %}">
+
+</head>
+<body>
+
+<form action="/action_page.php">
+  <div class="container">
+    <h1>Ro'yhatdan o'tish</h1>
+    <p>O'z hisobingizni yaratishingiz uchun iltimos shularni to'ldirib chiqing</p>
+    <hr>
+
+    <label for="email"><b>Email</b></label>
+    <input type="text" placeholder="Enter Email" name="email" id="email" required>
+
+    <label for="psw"><b>Parol</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+
+    <label for="psw-repeat"><b>Parolni takrorlang</b></label>
+    <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
+    <hr>
+    <p>Hisob yaratish mobaynida siz shu qoidalarga rozilik bildirasiz <a href="#">Terms & Privacy</a>.</p>
+
+    <button type="submit" class="registerbtn">To'yhatdan o'tish</button>
+  </div>
+  
+  <div class="container signin">
+    <p>Hisobingiz bormi? <a href="login/">Kirish</a>.</p>
+  </div>
+</form>
+
+</body>
+</html>

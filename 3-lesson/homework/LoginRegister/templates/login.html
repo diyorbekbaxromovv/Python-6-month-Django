@@ -1,0 +1,37 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="{% static 'login.css' %}">
+</head>
+<body>
+
+<h2>Kirish</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="{% static 'img/img_avatar2.png' %}" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Usernameni kiriting" name="uname" required>
+
+    <label for="psw"><b>Parol</b></label>
+    <input type="password" placeholder="Parolingizni kiriting" name="psw" required>
+        
+    <button type="submit">Kirish</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Eslab qol
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Ortga</button>
+    <span class="psw">Hisobingiz <a href="register/">Yoq'mi?</a></span>
+  </div>
+</form>
+
+</body>
+</html>
