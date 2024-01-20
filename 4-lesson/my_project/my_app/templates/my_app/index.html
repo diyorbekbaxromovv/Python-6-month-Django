@@ -1,0 +1,47 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'my_app/css/style.css' %}">
+</head>
+<body>
+    <H1>Hello World</H1>
+
+
+    <ul>
+        <li><a href="{% url 'main' %}">Main</a></li>
+        <li>Index</li>
+        <li>About</li>
+        <li></li>
+    </ul>
+
+
+
+
+    <!-- <ul>
+        <li>{{Murodjon.surname}} {{Murodjon.age}} {{Murodjon.profession}}</li>
+    </ul> -->
+
+    <!-- <ul>
+        {% for name in names %}
+         <li>{{name}}</li>
+
+        {% endfor %}
+    </ul> -->
+
+
+    <!-- <ul>
+        {% for key,value in names.items %}
+         <li>{{key}}</li>
+
+        {% endfor %}
+    </ul> -->
+
+
+</body>
+
+
+</html>
