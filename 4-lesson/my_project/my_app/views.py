@@ -19,3 +19,7 @@ def index(request):
 
 def main(request):
     return render(request, "my_app/main.html")
+def about(request):
+    return render(request, 'my_app/about.html')
+def contact(request):
+    return render(request, 'my_app/contact.html')
