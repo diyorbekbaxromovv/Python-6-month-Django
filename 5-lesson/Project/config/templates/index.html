@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'main/css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{% static 'main/css/style.css' %}">
+    <title>Document</title>
+</head>
+<body>
+
+    
+<nav class="navbar navbar-expand-xl navbar-light bg-light">
+    <div class="container-fluid">
+       <a class="navbar-brand" href="#">Navbar</a>
+       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarBasic" aria-controls="navbarBasic" aria-expanded="false" aria-label="Toggle navigation">
+         <span class="navbar-toggler-icon"></span>
+       </button>
+       <div class="collapse navbar-collapse" id="navbarBasic">
+         <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+            <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+            </li>
+         </ul>
+         <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+         </form>
+       </div>
+    </div>
+ </nav>
+            
+    <div class="container mt-5">
+
+        <div class="row">
+            <div class="col-md-2">
+                <h1>Bo'limlar</h1>
+                
+
+
+                <ul class="list-group">
+                    {% for c in categories%}
+                        <li class="list-group-item"> {{ c }}</li>
+                    {% endfor %}
+                    </ul>
+
+<!--                 
+                <ul class="list-group">
+                    <li class="list-group-item">Python</li>
+                    <li class="list-group-item">Data science</li>
+                    <li class="list-group-item">Mobile dev</li>
+                    <li class="list-group-item">Machine learning</li>
+                </ul> -->
+               
+            </div>
+            <div class="col-md-8">
+                <div class="card p-3">
+                    <img src="{% static 'main/img/img.png' %}" alt="">
+                    <h1>The best CSS frameworks</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestias sunt 
+                        nisi dolor totam cum dolores earum odio dolorum incidunt maiores!</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <h3>Eng ko'p o'qildi</h3>
+                <div class="card text-center p-2 mb-2 ">
+                    <a href="#">The best CSS frameworks </a>
+                </div>
+                <div class="card text-center p-2 mb-2">
+                    <a href="#">The best CSS frameworks </a>
+                </div>
+                <div class="card text-center p-2 mb-2">
+                    <a href="#">The best CSS frameworks </a>
+                </div>
+                
+                
+            </div>
+        </div>
+    </div>
+</body>
+</html>
