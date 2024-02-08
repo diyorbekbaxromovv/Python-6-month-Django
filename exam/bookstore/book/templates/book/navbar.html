@@ -1,0 +1,18 @@
+{% load static %}
+
+
+{% block content %} 
+
+<div id="templatemo_container" style="background: #1c1c1b url('{% static 'book/images/templatemo_bg.jpg' %}') repeat-y">
+	<div id="templatemo_menu" style="background: url('{% static 'book/images/templatemo_menu_bg.jpg' %}') no-repeat;">
+    	<ul>
+            <li><a href="{% url 'index' %}" class="current">Asosiy</a></li>
+            <li><a href="#">Qidirish</a></li>
+            <li><a href="#">Kitoblar</a></li>            
+            <li><a href="#">Yangiliklar</a></li>  
+            <li><a href="#">Kompaniya</a></li> 
+            <li><a href="#">Bog'lanish</a></li>
+    	</ul>
+    </div> <!-- end of menu -->
+
+{% endblock content %}
